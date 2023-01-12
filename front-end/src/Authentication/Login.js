@@ -2,6 +2,7 @@ import {React, useState} from "react";
 import JoblyApi from "../Api";
 import { Redirect } from "react-router-dom";
 import { useHistory } from "react-router-dom"
+import Navigation from "../Navigation/Navigation";
 
 function Login(props) {
   const [formData, setFormData] = useState({
@@ -9,7 +10,14 @@ function Login(props) {
     password: "",
   });
 
+  const [token, setToken] = useState(localStorage.getItem("token"))
+
   const history = useHistory()
+
+  const handleLogout = () => {
+    setToken(null);
+    localStorage.removeItem("token");
+  };
 
   const handleChange = (event) => {
     const { id, value } = event.target;
@@ -24,6 +32,8 @@ function Login(props) {
   };
   return (
     <div className="Login">
+      <Navigation token={token} handleLogout={handleLogout}/>
+
       <form>
         <label htmlFor="username">Username</label>
         <input id="username" value={formData.username} type="text" onChange={handleChange} />

@@ -1,0 +1,36 @@
+a {
+    text-decoration: none;
+    color: #007BFF
+
+}
+.Navigation {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 45px;
+    border-bottom: 2px solid lightgrey;
+    justify-content: space-between;
+    color:#007BFF;
+    background-color: white;
+}
+
+.Navigation__right {
+    display: flex;
+    flex-direction: row;
+    padding-right: 1em;
+    padding-top: 0.25em;
+}
+
+.Navigation__right h2 {
+    font-size: 14px;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.Navigation__left {
+    padding-left: 1em;
+    font-size: 16px;
+}
+.Navigation__left h1 {
+    font-size: 18px;
+}

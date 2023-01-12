@@ -57,9 +57,7 @@ class JoblyApi {
   static async signup(data) {
     // Send a POST request to the signup endpoint with the user data
     let res = await axios.post(`${BASE_URL}/auth/register`, data);
-    console.log(res.data)
     JoblyApi.token = res.data.token;
-
     return JoblyApi.token;
 }
 

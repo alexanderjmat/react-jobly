@@ -1,0 +1,30 @@
+body {
+    background-color: #f8f8f8;
+    z-index: -1;
+}
+.CompanyCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 auto;
+    border-top: 1px solid lightgray;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    border-bottom: 2px solid grey;
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 2em;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.CompanyCard p, .CompanyCard h2 {
+    margin-left: 24px;
+    color: black;
+}
+
+.CompanyCard p {
+    padding-bottom: 1em;
+}

@@ -1,0 +1,30 @@
+.Companies {
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+    background-color: #f8f8f8;
+}
+
+.Companies ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.Companies__search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2em;
+    width: 100%;
+}
+
+.Companies__search input {
+    display: flex;
+    width: 35%;
+}
+
+.Companies__search button {
+    width: 10%;
+    height: 40px;
+}
+

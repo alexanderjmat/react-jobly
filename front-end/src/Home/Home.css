@@ -1,0 +1,12 @@
+.Home {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f8f8;
+    height: 100vh;
+}
+
+.Home__body {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15%;
+}
